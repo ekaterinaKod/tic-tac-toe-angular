@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12 text-center mt-4">
+    <span *ngIf="!winner.won && isBoardFull()">It's a draw!</span>
+    <span *ngIf="!winner.won && !isBoardFull()">
+      Current player:
+      <strong>{{ currPlayer.symbol | showPlayerSymbol }}</strong>
+    </span>
+    <span *ngIf="winner.won" class="text-danger">
+      Player <strong> {{ currPlayer.name }}</strong> wins!
+    </span>
+  </div>
+  <div class="text-center mt-3">
+    <button type="button" class="btn btn-danger" (click)="resetGame()">
+      Play Again
+    </button>
+  </div>
+</div>

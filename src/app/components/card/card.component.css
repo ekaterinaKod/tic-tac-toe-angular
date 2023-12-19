@@ -1,0 +1,24 @@
+.square {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgb(104, 16, 16);
+}
+
+.square:hover {
+  background-color: rgb(245, 153, 153);
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

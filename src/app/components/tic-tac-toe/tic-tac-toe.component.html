@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-12 col-lg-6 offset-lg-3">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center mt-4">TIC-TAC-TOE</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <label class="sr-only" for="playerX"></label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-danger text-white">
+              <strong>X</strong>
+            </div>
+          </div>
+          <input
+            class="form-control"
+            type="text"
+            value="{{ players[1].name }}"
+            aria-label="playerX"
+            disabled
+            readonly
+          />
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <label class="sr-only" for="playerO"></label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-danger text-white">
+              <strong>O</strong>
+            </div>
+          </div>
+          <input
+            class="form-control"
+            type="text"
+            value="{{ players[0].name }}"
+            aria-label="playerO"
+            disabled
+            readonly
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mb-3">
+      <app-status></app-status>
+    </div>
+    <div class="col-12 col-sm-6 offset-sm-3 mb-4">
+      <app-board></app-board>
+    </div>
+    <div class="col-12">
+      <app-score></app-score>
+    </div>
+    <div class="col-12 text-center">
+      <button class="btn btn-danger" (click)="quitGame()">Quit Game</button>
+    </div>
+  </div>
+</div>
