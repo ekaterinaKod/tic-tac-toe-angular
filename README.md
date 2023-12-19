@@ -1,6 +1,7 @@
 # TicTacToe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+You can download the project and build it or you can access it from this url: https://remarkable-salmiakki-c196c5.netlify.app/
 
 ## Development server
 
