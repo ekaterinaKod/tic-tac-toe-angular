@@ -36,4 +36,8 @@ export class CardComponent implements OnDestroy {
     if (!this.marked)
       this.onCardClicked.emit(true);
   }
+
+  isMobile(): boolean {
+    return window.innerWidth < 1000;
+  }
 }
