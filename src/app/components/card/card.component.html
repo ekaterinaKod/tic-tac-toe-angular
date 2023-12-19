@@ -1,5 +1,14 @@
-<div class="square" [class.bg-danger]="marked" (click)="onCardClick()">
+<div
+  class="square"
+  [class.bg-primary]="marked && currPlayer === 0"
+  [class.bg-danger]="marked && currPlayer === 1"
+  [class.hover-o]="currPlayer === 0"
+  [class.hover-x]="currPlayer === 1"
+  (click)="onCardClick()"
+>
   <div class="content">
-    <p><strong>{{ value | showPlayerSymbol }}</strong></p>
+    <p>
+      <strong>{{ value | showPlayerSymbol }}</strong>
+    </p>
   </div>
 </div>

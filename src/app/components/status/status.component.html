@@ -5,12 +5,12 @@
       Current player:
       <strong>{{ currPlayer.symbol | showPlayerSymbol }}</strong>
     </span>
-    <span *ngIf="winner.won" class="text-danger">
+    <p *ngIf="winner.won" [class.text-primary]="currPlayer.symbol === 0" [class.text-danger]="currPlayer.symbol === 1">
       Player <strong> {{ currPlayer.name }}</strong> wins!
-    </span>
+    <p>
   </div>
   <div class="text-center mt-3">
-    <button type="button" class="btn btn-danger" (click)="resetGame()">
+    <button type="button" class="btn btn-success" (click)="resetGame()">
       Play Again
     </button>
   </div>

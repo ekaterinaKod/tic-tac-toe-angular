@@ -107,7 +107,7 @@ export class GameService {
     this.winnerSubject.next(winner);
 
     let gamesPlayed = 0;
-    this.gameScore.pipe(take(1)).subscribe(obj => {
+    this.gameScore.forEach(obj => {
       gamesPlayed = obj.gameNumber;
     });
 
@@ -148,7 +148,7 @@ export class GameService {
 
     this.boardSubject.next(this.board);
     this.winnerSubject.next({won: false});
-    //this.playerSubject.next(this.player);
+    this.playerSubject.next(this.player);
   }
 
   quitGame(): void {

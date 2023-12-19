@@ -10,7 +10,7 @@
         <th *ngFor="let game of games">{{ game.gameNumber }}</th>
       </tr>
     </thead>
-    <tbody class="table-group-divider text-danger text-center">
+    <tbody class="table-group-divider text-success text-center">
       <tr>
         <th
           scope="row"
@@ -45,7 +45,7 @@
         <th
           scope="row"
           [ngClass]="{
-            'table-danger': currPlayer === scoreResults.O
+            'table-primary': currPlayer === scoreResults.O
           }"
         >
           {{ players[0].name }}

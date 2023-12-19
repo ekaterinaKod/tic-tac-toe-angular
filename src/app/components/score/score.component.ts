@@ -18,7 +18,6 @@ export class ScoreComponent implements OnDestroy {
   currPlayer: PlayerSymbol = PlayerSymbol.NONE;
 
   games: Game[] = [];
-  board: PlayerSymbol[][];
 
   constructor(
     private storage: LocalStorageService,
