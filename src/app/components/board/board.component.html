@@ -7,7 +7,8 @@
       <app-card
         [marked]="winner.won && isCardMarked(rowI, colI)"
         [value]="col"
-        (onCardClicked)="placeMark(rowI, colI)"
+        [row]="rowI"
+        [col]="colI"
         class="text-center display-1"
         [ngClass]="{ disabled: winner.won }"
       >

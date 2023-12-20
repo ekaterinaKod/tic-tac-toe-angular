@@ -47,10 +47,6 @@ export class BoardComponent implements OnDestroy {
     this.subs.unsubscribe();
   }
 
-  placeMark(rowI: number, colI: number) {
-    this.gameService.placeMark(rowI, colI);
-  }
-
   isCardMarked(rowI: number, colI: number) {
     if (rowI === this.winner.row || colI === this.winner.col) {
       return true;
