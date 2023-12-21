@@ -1,7 +1,6 @@
 # TicTacToe
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
-You can download the project and build it or you can access it from this url: https://remarkable-salmiakki-c196c5.netlify.app/
+This project is a simple Tic-Tac-Toe game implemented using Angular and styled with the Bootstrap CSS framework. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+You can access the live demo of the project [here](https://remarkable-salmiakki-c196c5.netlify.app/).
 
 ## Development server
 
